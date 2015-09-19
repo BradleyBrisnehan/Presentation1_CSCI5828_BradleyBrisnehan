@@ -12,6 +12,18 @@
        color:white
     }
 
+    p.padding
+    {
+        padding-left: 1cm;
+    }
+
+    img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
     #header
     {
        font-family: Verdana, "Bitstream Vera Sans", sans-serif;
@@ -65,7 +77,7 @@
         6.  <a href="Tools.html">Tools</a><br>
         7.  <a href="Conclusion.html">Conclusion</a><br>
         <br>
-        <a href="/References.html">References</a><br>
+        <a href="References.html">References</a><br>
      </p>
   </div>
 
@@ -74,37 +86,43 @@
      <p>
         The backbone of Rapid Application Development is the collection of prototypes - either built sequentially by a single team or in parallel by many small teams.  Two basic dimensions of protoypes exist - vertical and horizontal.  The horizontal dimension defines the user interface and business requirements.  The vertical dimension defines the lower-level functionality of a database interface, specific functionality, or data processing technique.  Four primary types of prototypes exist in modern industry.
      </p>
-     <p>
+     <p class="padding">
         <b>Throwaway/Rapid Prototyping</b> is the most minimalist of the prototyping methods.  These prototypes are developed quickly and with minimal effort and are discarded in favor of a final solution.  While these prototypes are not integrated into the final code, they allow the developer to organize their thoughts prior to the final implementation and allow the customer to test functionality.
      </p>
-     <p>
+     <p class="padding">
         <b>Evolutionary Prototyping</b> is the prototyping of important structures and functionality with well-understood requirements.  These prototypes will be integrated and form the backbone of the final design.  As requirements are further refined and understood, more prototypes will be developed and refined. 
      </p>
-     <p>
+     <p class="padding">
         <b>Incremental Prototyping</b> is the generation of smaller prototypes which contribute to the generation of a complete system.
      </p>
-     <p>
+     <p class="padding">
         <b>Extreme Prototyping</b> is comprised of three parts.  The first step is the generation of all pages for a basic prototype.  The second step is implementation of data processing in the service layer.  The final step is the integration of pages and services.  This prototyping method is common in web development.
      </p>
      <p>
         If Rapid Application Development is comprised of a collection of prototypes, what phases comprise a prototype?  There are five phases to prototype development in RAD.
      </p>
-     <p>
-        <b>Business Modeling</b>
+     <p class="padding">
+        <b>Business Modeling</b> defines the distribution of information amongst many business systems.  The methods and interface for exchanging information among these systems is defined.
+     </p>
+     <p class="padding">
+        <b>Data Modeling</b> defines the attributes and interface for all data sets established during Business Modeling.  Each data set is then linked back to its contribution to the business model.
+     </p>
+     <p class="padding">
+        <b>Process Modeling</b> develops the processes (insert, add, delete, modify, write, etc.) which will act on the Data models developed in the previous model.
+     </p>
+     <p class="padding">
+        <b>Application Generation</b> is the conversion of Data and Process Models into functional application code.  RAD achieves this through the use of automation tools. Automation tools allow for implementation and resgression testing as the application grows with each new prototype iteration.
+     </p>
+     <p class="padding">
+        <b>Testing and Turnover</b> is the final phase of prototype development.  The interface among all prototypes must be thoroughly tested, but the functionality of each protoype has been modularly tested throughoutamd should require minimal attention.  Test cases are generated inline with the Application Generation phase.  
      </p>
      <p>
-        <b>Data Modeling</b>
+        A graphical representation of each modeling step is shown below:
      </p>
+     <img src="C:\Users\Owner\Desktop\Presentation1_CSCI5828_BradleyBrisnehan\images\ProcessFlowDiagram.png" alt="Process Flow Diagram">
      <p>
-        <b>Process Modeling</b>
+        The incremental delivery of prototypes throughout the applications lifetime cultivates a strong working relationship among developers and customers, reduces risk of delivering the wrong solution and allows requirements to evolve as the system is grown.  This is a deviation from older software development life cycles in which extensive time is spent solidifying specifications and requirements early on with minimal evolution in these constraints as the design is actualized.  This change in mentality may seem to deliver higher quality in all cases, but this method has its place in a subset of application types.
      </p>
-     <p>
-        <b>Application Generation</b> is the conversion of data and process models into functional application code.  RAD achieves this through the use of automation tools. 
-     </p>
-     <p>
-        <b>Testing and Turnover</b> is the final phase of prototype development.  The interface among all prototypes must be thoroughly tested, but the functionality of each protoype has been modularly tested throughoutamd should require minimal attention.  
-     </p>
-     <img src="C:\Users\Owner\Desktop\Presentation1_CSCI5828_BradleyBrisnehan\images\ProcessFlowDiagram.png" alt="Process Flow Diagram" style="horizontal-align:middle" style="width:528px;height:541px;">
   </div>
 
   <div id="footer">
